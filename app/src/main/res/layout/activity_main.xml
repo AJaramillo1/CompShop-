@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/grey_light">
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:foreground="@drawable/gradiente"
+            app:cardElevation="0dp"
+            app:cardMaxElevation="0dp"
+            android:layout_weight=".5" >
+
+            <ImageView
+                android:id="@+id/imagen_fondo"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@drawable/fondo"
+                android:foreground="@drawable/gradiente"
+                android:scaleType="centerCrop" />
+
+            <ImageView
+                android:id="@+id/imagenMecanico"
+                android:layout_width="300dp"
+                android:layout_height="140dp"
+                android:layout_gravity="center"
+                android:layout_margin="20dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/compare_logo"
+                app:riv_corner_radius="100dp"
+                />
+
+
+        </com.google.android.material.card.MaterialCardView>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            android:layout_margin="10dp"
+            android:layout_weight="1">
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/cotiza_card"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:background="@drawable/fondo"
+                app:cardElevation="0dp"
+                app:cardMaxElevation="0dp"
+                android:layout_margin="40dp"
+                app:cardCornerRadius="20dp"
+                android:layout_weight="1" >
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:scaleType="centerCrop"
+                    android:foreground="@drawable/gradiente_cotiza"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="Cotiza"
+                    android:textColor="@color/grey_light"
+                    android:textSize="40sp"
+                    android:textStyle="bold"/>
+
+            </com.google.android.material.card.MaterialCardView>
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/quienes_somos_card"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:background="@drawable/fondo"
+                app:cardElevation="0dp"
+                app:cardMaxElevation="0dp"
+                android:layout_margin="40dp"
+                app:cardCornerRadius="20dp"
+                android:layout_weight="1" >
+                <ImageView
+
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:scaleType="centerCrop"
+                    android:foreground="@drawable/gradiente_general"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="¿Quiénes somos?"
+                    android:textColor="@color/grey_light"
+                    android:textSize="40sp"
+                    android:textStyle="bold"/>
+
+
+            </com.google.android.material.card.MaterialCardView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
